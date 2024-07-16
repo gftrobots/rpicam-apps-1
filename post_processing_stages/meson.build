@@ -48,6 +48,7 @@ if opencv_dep.found()
         'annotate_cv_stage.cpp',
         'plot_pose_cv_stage.cpp',
         'object_detect_draw_cv_stage.cpp',
+        'cv_template_stage.cpp',
     ])
 
     # OpenCV assets
@@ -55,6 +56,7 @@ if opencv_dep.found()
         assets_dir / 'sobel_cv.json',
         assets_dir / 'face_detect_cv.json',
         assets_dir / 'annotate_cv.json',
+        assets_dir / 'cv_template.json',
     ])
 
     opencv_postproc_lib = shared_module('opencv-postproc', opencv_postproc_src,
